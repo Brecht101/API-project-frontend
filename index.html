@@ -10,7 +10,10 @@
         }
     }">
         <button x-on:click="getData">Request all users</button>
-        Data returned: <strong x-text="responsedata.first_name">Placeholder</strong>
+        Data returned:
+        <div x-for="user in responsdata">
+            <strong x-text="user.first_name">Placeholder</strong>
+        </div>
     </div>
 </body>
 </html>
