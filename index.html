@@ -12,10 +12,10 @@
         <button x-on:click="getData">Request all users</button>
         Data returned:
         <template x-for="user in responsedata" : key="user.id">
-            <li x-text="user.first_name">Placeholder</li>
-            <li x-text="user.last_name"></li>
-            <li x-text="user.registration_date"></li>
-            <li x-text="user.id"></li>
+            <p x-text="user.first_name">Placeholder</p>
+            <p x-text="user.last_name">Placeholder</p>
+            <p x-text="user.registration_date">Placeholder</p>
+            <p x-text="user.id">Placeholder</p>
         </template>
 
     </div>
