@@ -11,9 +11,7 @@
     }">
         <button x-on:click="getData">Request all users</button>
         Data returned:
-        <div x-for="user in responsedata" : key="user">
-            <strong x-text="user.first_name">Placeholder</strong>
-        </div>
+        <strong x-text="responsedata[0].first_name">Placeholder</strong>
     </div>
 </body>
 </html>
