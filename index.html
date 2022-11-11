@@ -10,12 +10,26 @@
         }
     }">
         <button x-on:click="getData">Request all users</button>
-        Data returned:
         <template x-for="user in responsedata">
+            console.log(user)
             <template x-for="item in user">
+                console.log(item)
                 <p x-text="item"></p>
             </template>
         </template>
+    </div>
+    <div x-data="{
+        userdata: null,
+        async getUser() {
+            this.responsedata = await (await fetch('https://api-brecht101.cloud.okteto.net/user?=' + id)).json();
+        }
+    }">
+        <input type="text" x-model="id">
+        <button x-on:click="getUser">Get user</button>
+            <template x-for="item in userdata">
+                console.log(item)
+                <p x-text="item"></p>
+            </template>
     </div>
 </body>
 </html>
