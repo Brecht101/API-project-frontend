@@ -3,7 +3,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
 </head>
 <body>
-    <ul x-data="{
+    <div x-data="{
         responsedata: null,
         async getData() {
             this.responsedata = await (await fetch('https://api-brecht101.cloud.okteto.net/users')).json();
@@ -11,13 +11,14 @@
     }">
         <button x-on:click="getData">Request all users</button>
         Data returned:
-        <template x-for="user in responsedata">
-            <h1 x-text="user.last_name"></h1>
-            <h2 x-text="user.first_name"></h2>
-            <li x-text="user.registration_date">Placeholder</li>
-            <li x-text="user.id">Placeholder</li>
+        <template>
+            <div x-for="user in responsedata">
+                <p x-text="user.last_name"></p>
+                <p x-text="user.first_name"></p>
+                <p x-text="user.registration_date">Placeholder</p>
+                <p x-text="user.id">Placeholder</p>
+            </div>
         </template>
-
-    </ul>
+    </div>
 </body>
 </html>
