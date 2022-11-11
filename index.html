@@ -11,13 +11,11 @@
     }">
         <button x-on:click="getData">Request all users</button>
         Data returned:
-        <template>
-            <div x-for="user in responsedata">
+        <template x-for="user in responsedata">
                 <p x-text="user.last_name"></p>
                 <p x-text="user.first_name"></p>
                 <p x-text="user.registration_date">Placeholder</p>
                 <p x-text="user.id">Placeholder</p>
-            </div>
         </template>
     </div>
 </body>
