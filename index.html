@@ -16,21 +16,26 @@
         <button x-on:click="getData">Request all users</button>
         <table>
             <tr>
-                <th><strong>Firstname</strong></th>
-                <th><strong>Lastname</strong></th>
-                <th><strong>ID</strong></th>
-                <th><strong>Registration date</strong></th>
+                <template x-for="item in responsedata">
+                    <th><strong>User</strong></th>
+                </template>
             </tr>
             <tr>
                 <template x-for="item in responsedata">
                     <td>Firstname: <strong x-text="item.first_name"></strong></td>
                 </template>
+            </tr>
+            <tr>
                 <template x-for="item in responsedata">
                     <td>Lastname: <strong x-text="item.last_name"></strong></td>
                 </template>
+            </tr>
+            <tr>
                 <template x-for="item in responsedata">
                     <td>ID: <strong x-text="item.id"></strong></td>
                 </template>
+            </tr>
+            <tr>
                 <template x-for="item in responsedata">
                     <td>Registration date: <strong x-text="item.registration_date"></strong></td>
                 </template>
