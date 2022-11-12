@@ -11,10 +11,8 @@
     }">
         <button x-on:click="getData">Request all users</button>
         <template x-for="user in responsedata">
-            console.log(user)
             <template x-for="item in user">
-                console.log(item)
-                <p x-text="item"></p>
+                <p x-text="item">e</p>
             </template>
         </template>
     </div>
@@ -26,11 +24,12 @@
             this.userdata = await (await fetch('https://api-brecht101.cloud.okteto.net/user?id=' + parseInt(id))).json();
         }
     }">
-        <input type="text" x-model="id">
+        <label for="id">Please enter the user ID</label>
+        <input type="text" x-model="id" id="id">
         <button x-on:click="getUser(id)">Get user</button>
+        <p x-text="userdata[0].first_name"></p>
             <template x-for="item in userdata">
-                console.log(item)
-                <p x-text="item"></p>
+                <p x-text="item">e</p>
             </template>
     </div>
     <hr>
@@ -56,9 +55,12 @@
             console.log(this.postdata);
         },
     }">
-        <input type="text" x-model="firstname">
-        <input type="text" x-model="lastname">
-        <input type="text" x-model="password">
+    <label for="firstname">Please enter your first name</label>
+        <input type="text" x-model="firstname" id="firstname">
+    <label for="lastname">Please enter your last name</label>
+        <input type="text" x-model="lastname" id="lastname">
+    <label for="password">Please enter your password</label>
+        <input type="text" x-model="password" id="password">
         <button x-on:click="callmethod1">Call method</button>
 
         <p>Firstname: <strong x-text="postdata.first_name"></strong></p>
