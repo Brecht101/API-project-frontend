@@ -38,7 +38,7 @@
         lastname: null,
         password: null,
         async callmethod1() {
-            this.responsedata = await (await fetch('https://api-brecht101.cloud.okteto.net/users/create',
+            this.postdata = await (await fetch('https://api-brecht101.cloud.okteto.net/users/create',
             {
                 method: 'POST',
                 body: JSON.stringify({
@@ -51,7 +51,7 @@
                 },
             })).json();
 
-            console.log(this.responsedata);
+            console.log(this.postdata);
         },
     }">
         <input type="text" x-model="firstname">
