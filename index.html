@@ -14,12 +14,19 @@
         }
     }">
         <button x-on:click="getData">Request all users</button>
-        <template x-for="user in responsedata">
-            <p>Firstname: <strong x-text="user.first_name"></strong></p>
-            <p>Lastname: <strong x-text="user.last_name"></strong></p>
-            <p>ID: <strong x-text="user.id"></strong></p>
-            <p>Registration date: <strong x-text="user.registration_date"></strong></p>
+        <template x-for="item in responsedata">
+            <p>Firstname: <strong x-text="item.first_name"></strong></p>
         </template>
+        <template x-for="item in responsedata">
+            <p>Lastname: <strong x-text="item.last_name"></strong></p>
+        </template>
+        <template x-for="item in responsedata">
+            <p>ID: <strong x-text="item.id"></strong></p>
+        </template>
+        <template x-for="item in responsedata">
+            <p>Registration date: <strong x-text="item.registration_date"></strong></p>
+        </template>
+
     </div>
     <hr>
     <div x-data="{
