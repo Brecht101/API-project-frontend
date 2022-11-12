@@ -20,6 +20,7 @@
     </div>
     <div x-data="{
         userdata: null,
+        id: null,
         async getUser(id) {
             this.userdata = await (await fetch('https://api-brecht101.cloud.okteto.net/user?=' + id)).json();
         }
@@ -30,6 +31,40 @@
                 console.log(item)
                 <p x-text="item"></p>
             </template>
+    </div>
+<div x-data="{
+        postdata: null,
+        firstname: null,
+        lastname: null,
+        password: null,
+        async callmethod1() {
+            this.responsedata = await (await fetch('https://api-brecht101.cloud.okteto.net/users/create',
+            {
+                method: 'POST',
+                body: JSON.stringify({
+                    first_name: this.firstname,
+                    last_name: this.lastname,
+                    password: this.password,
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })).json();
+
+            console.log(this.responsedata);
+        },
+    }">
+        <input type="text" x-model="firstname">
+        <input type="text" x-model="lastname">
+        <input type="text" x-model="password">
+        <button x-on:click="callmethod1">Call method</button>
+
+        <p>Firstname: <strong x-text="postdata.first_name"></strong></p>
+        <p>Lastname: <strong x-text="postdata.last_name"></strong></p>
+        <p>Password: <strong x-text="postdata.password"></strong></p>
+        <p>ID: <strong x-text="postdata.id"></strong></p>
+        <p>Registration date: <strong x-text="postdata.registration_date"></strong></p>
+
     </div>
 </body>
 </html>
