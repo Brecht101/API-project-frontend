@@ -27,9 +27,9 @@
         <label for="id">Please enter the user ID</label>
         <input type="text" x-model="id" id="id">
         <button x-on:click="getUser(id)">Get user</button>
-        <p x-text="userdata[0].first_name"></p>
             <template x-for="item in userdata">
                 <p x-text="item">e</p>
+                console.log(item)
             </template>
     </div>
     <hr>
