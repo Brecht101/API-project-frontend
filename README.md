@@ -1,45 +1,16 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+Beschrijving:
+Ik ben op basis van mijn SQL project van vorig jaar door gegaan met het maken van een "registratie" pagina waar ik de verschillende users van mijn webshop kan opvragen, een enkele user kan opvragen, en natuurlijk ook users kan aanmaken. Deze data zit allemaal in een MySQL database die samen met de API zelf op Okteto staat in een container.
+Frontend link: https://brecht101.github.io/API-project-frontend/
+API link: https://api-brecht101.cloud.okteto.net
+Enkele user opvragen GET request:
+![image](https://user-images.githubusercontent.com/91054743/201480890-42c25977-897c-4f17-9b5a-815360be8ecc.png)
+
+Meerdere users opvragen GET request:
+![image](https://user-images.githubusercontent.com/91054743/201480944-41efc195-33f5-419e-b9c4-128bda7df13e.png)
+
+User aanmaken met POST request
+![image](https://user-images.githubusercontent.com/91054743/201481016-b0af7e3c-6047-4591-8172-d080d8ef2711.png)
+
+OpenAPI docs screenshot:
 
 
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">project_title</h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
