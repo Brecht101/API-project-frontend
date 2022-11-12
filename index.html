@@ -10,6 +10,7 @@
         responsedata: null,
         async getData() {
             this.responsedata = await (await fetch('https://api-brecht101.cloud.okteto.net/users')).json();
+            console.log(this.responsedata)
         }
     }">
         <button x-on:click="getData">Request all users</button>
