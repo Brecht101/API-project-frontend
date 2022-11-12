@@ -18,6 +18,7 @@
             </template>
         </template>
     </div>
+    <hr>
     <div x-data="{
         userdata: null,
         id: null,
@@ -26,12 +27,13 @@
         }
     }">
         <input type="text" x-model="id">
-        <button x-on:click="getUser">Get user</button>
+        <button x-on:click="getUser(id)">Get user</button>
             <template x-for="item in userdata">
                 console.log(item)
                 <p x-text="item"></p>
             </template>
     </div>
+    <hr>
 <div x-data="{
         postdata: null,
         firstname: null,
