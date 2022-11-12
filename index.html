@@ -30,9 +30,10 @@
         <label for="id">Please enter the user ID</label>
         <input type="text" x-model="id" id="id">
         <button x-on:click="getUser(id)">Get user</button>
-        <template x-for="item in userdata">
-            <p x-text="item"></p>
-        </template>
+        <p>Firstname: <strong x-text="userdata.first_name"></strong></p>
+        <p>Lastname: <strong x-text="userdata.last_name"></strong></p>
+        <p>ID: <strong x-text="userdata.id"></strong></p>
+        <p>Registration date: <strong x-text="userdata.registration_date"></strong></p>
     </div>
     <hr>
     <div x-data="{
