@@ -12,5 +12,8 @@ User aanmaken met POST request
 ![image](https://user-images.githubusercontent.com/91054743/201481016-b0af7e3c-6047-4591-8172-d080d8ef2711.png)
 
 OpenAPI docs screenshot:
-
-
+![image](https://user-images.githubusercontent.com/91054743/201481300-81335f58-46cd-4a75-8357-ac32d53e640e.png)
+![image](https://user-images.githubusercontent.com/91054743/201481323-5da701ac-af42-4fc4-83ca-d4d578813309.png)
+![image](https://user-images.githubusercontent.com/91054743/201481349-f60ae3d0-27ce-48f2-822d-f68cc1473906.png)
+![image](https://user-images.githubusercontent.com/91054743/201481359-7eed3c5c-6d70-4d45-8e98-32e2a4fad34b.png)
+![image](https://user-images.githubusercontent.com/91054743/201481371-e13b524e-22eb-4b17-a3f9-da1d5178e4de.png)
