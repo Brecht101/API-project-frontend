@@ -1,6 +1,6 @@
 # API-Development Project
 
-Ik ben op basis van mijn SQL project van vorig jaar door gegaan met het maken van een "registratie" pagina waar ik de verschillende users van mijn webshop kan opvragen, een enkele user kan opvragen, en natuurlijk ook users kan aanmaken. Deze data zit allemaal in een MySQL database die samen met de API zelf op Okteto staat in een container.
+Ik ben op basis van mijn SQL project van vorig jaar door gegaan met het maken van een "registratie" pagina waar ik de verschillende users van mijn webshop kan opvragen, een enkele user kan opvragen, en natuurlijk ook users kan aanmaken. Deze data zit allemaal in een MySQL database die samen met de API zelf op Okteto staat in verschillende containers.
 
 Frontend link: https://brecht101.github.io/API-project-frontend/
 
