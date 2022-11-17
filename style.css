@@ -28,5 +28,5 @@ hr {
     background-color: grey;
 }
 table {
-    display: block;
+    overflow: auto;
 }
