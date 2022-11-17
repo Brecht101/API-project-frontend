@@ -27,6 +27,6 @@ hr {
     height: 2px;
     background-color: grey;
 }
-div:first-child {
-    display: block;
+table {
+    word-break: break-word;
 }
