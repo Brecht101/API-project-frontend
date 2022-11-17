@@ -27,3 +27,6 @@ hr {
     height: 2px;
     background-color: grey;
 }
+body:first-child {
+    display: block;
+}
